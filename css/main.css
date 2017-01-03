@@ -188,14 +188,22 @@ a:hover {
 	display: none;
 }
 
-@media only screen and (min-width: 486px) and (max-width: 600px;) {
-	.body {
-		width: 100%;
-		text-align: center;
-	}
+.google-maps {
+        position: relative;
+        padding-bottom: 450px; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+}
 
-	.text-center .graytext .graytext1 {
-		width: 300px;
-		text-align: center;
+@media only screen and (min-width: 375px) and (max-width: 400px), (max-width: 468px) {
+	.secdiv {
+		width: 230px;
 	}
 }
